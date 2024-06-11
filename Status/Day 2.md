@@ -241,6 +241,23 @@ for D in my_list:
 
 print(','.join(map(str, x)))
 ```
+
+**OR**
+
+'''Solution by: andrewByte
+import math
+C = 50
+H = 30
+
+def calc(C, H):
+    input_str = input()
+    D_values = input_str.split(",")
+    result = [round(math.sqrt((2 * C * int(D)) / H)) for D in D_values]
+    return result
+
+print(calc(C, H))
+
+
 ---
 
 # Question 7
